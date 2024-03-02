@@ -37,7 +37,7 @@ h2 {
 div.main-container {
   width: auto; 
   margin: 0 10px auto; 
-  padding: 60px;
+  padding: 20px;
   border-radius: 10px; /* Add border radius for rounded corners */
   text-align: center; /* Center the content inside the container */
 }
@@ -113,6 +113,7 @@ div.secondary-container {
 
 
 #counter {
+  margin: 10%;
   font-size: 30px;
   font-family: "Varela Round", sans-serif;
 }
@@ -150,6 +151,18 @@ div.secondary-container {
       font-size: 40px;
       text-align: center;
     }
+    .footer-section p {
+      text-decoration: none;
+      color: whitesmoke;
+      text-shadow: 0 0 20px black;
+      padding: 10px;
+      word-wrap: break-word; /* Allow the text to wrap */
+    }
+    #reset-button {
+      padding-top: 10px; /* Add padding to the top */
+      padding-bottom: 10px; /* Add padding to the bottom */
+      /* Other button styles */
+    }
   }
 }
 
@@ -171,6 +184,10 @@ div.secondary-container {
       padding: 5px;
       word-wrap: break-word; /* Allow the text to wrap */
     }
+    #reset-button {
+      padding-top: 10px; /* Add padding to the top */
+      padding-bottom: 10px; /* Add padding to the bottom */
+      /* Other button styles */
     }
   }
-
+}
