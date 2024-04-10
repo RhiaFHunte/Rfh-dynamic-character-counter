@@ -1,4 +1,4 @@
-# Dynamic Character Counter 🚀
+# Real-Time Character Counter 🚀
 
 Welcome to the repository for my Dynamic Character Counter - a sleek, real-time character counting web application designed from scratch. This project showcases a simple yet powerful utility that enhances text input fields with instant character counting feedback.
 
