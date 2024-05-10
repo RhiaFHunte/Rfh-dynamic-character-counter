@@ -16,10 +16,10 @@ h2, p {
   display: block;
   color: rgb(31, 31, 31);
   font-family: "Varela Round", sans-serif;
-  text-align: center; /* Center the text */
+  text-align: center;
 }
 
-h2 {
+.title-text {
   font-size: 40px;
   letter-spacing: 10px;
   font-style: normal;
@@ -33,6 +33,46 @@ h2 {
   font-style: normal;
 }
 
+
+/* Media queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
+    div.secondary-container {
+    width: auto;
+    margin: 30px;
+    padding: 20px;
+    text-align: center;
+    }
+    
+    .title-text {
+      display: block;
+      font-size: 25px;
+      text-align: center;
+      white-space: normal; 
+      overflow: visible; 
+
+    }
+    #character-count, #counter {
+      font-size: 16px; 
+
+    }
+
+    .footer-section p {
+      text-decoration: none;
+      color: whitesmoke;
+      text-shadow: 0 0 20px black;
+      padding: 5px;
+      word-wrap: break-word; 
+    }
+    #reset-button {
+      padding-top: 20px;
+ 
+    }
+  }
+
+
+
+
 /* Styles for the main container */
 div.main-container {
   width: auto; 
@@ -44,7 +84,8 @@ div.main-container {
 
 div.secondary-container {
   width: 40%; 
-  margin: 80px auto; /* Add margin to move the container downwards */
+  margin-top: 30px;
+  margin: 30px auto; 
   padding: 20px; /* Add padding inside the container */
   border-radius: 30px; /* Add border radius for rounded corners */
   text-align: center; /* Center the content inside the container */
@@ -57,6 +98,7 @@ div.secondary-container {
 }
 
 #input-field {
+  height: 200px;
   width: 100%; /* Adjust the width percentage */
   display: flex;
   margin: 0 auto; /* Center the input field */
@@ -72,6 +114,7 @@ div.secondary-container {
   /* Style for the placeholder text */
   color: #999; /* Placeholder text color */
   font-style: italic; /* Italicize the placeholder text */
+
 }
 
 #input-field:focus {
@@ -80,6 +123,7 @@ div.secondary-container {
 
 /* Style for the character count */
 #character-count {
+  text-align: center;
   color: whitesmoke;
   font-family: "Duru Sans", sans-serif;
   font-weight: 700;
@@ -87,18 +131,17 @@ div.secondary-container {
 
 /* CSS for the reset button */
 #reset-button {
-   background-color: #669fc6; /* Green background */
-   border: none; /* Remove border */
-   color: white; /* White text */
-   padding: 10px 20px; /* Add padding */
-   text-align: center; /* Center text */
-   text-decoration: none; /* Remove underline */
+   background-color: #669fc6;
+   border: none; 
+   color: white; 
+   padding: 10px 20px; 
+   text-align: center; 
    display: inline-block; /* Display as inline-block */
    font-size: 16px; /* Set font size */
    border-radius: 5px; /* Add border radius */
    cursor: pointer; /* Add cursor pointer on hover */
    position: relative; /* Set position to relative */
-   top: -60px; /* Move the button upwards */
+   top: -50px; /* Move the button upwards */
  }
 
 /* Change background color on hover */
@@ -113,6 +156,7 @@ div.secondary-container {
 
 
 #counter {
+  text-align: center;
   margin: 10%;
   font-size: 30px;
   font-family: "Varela Round", sans-serif;
@@ -142,52 +186,3 @@ div.secondary-container {
   text-decoration: underline;
 }
 
-/* Media queries for responsiveness */
-@media only screen and (max-width: 768px) {
-  div.secondary-container {
-    width: 80%; /* Reduce width for smaller screens */
-    h2 {
-      display: block;
-      font-size: 40px;
-      text-align: center;
-    }
-    .footer-section p {
-      text-decoration: none;
-      color: whitesmoke;
-      text-shadow: 0 0 20px black;
-      padding: 10px;
-      word-wrap: break-word; /* Allow the text to wrap */
-    }
-    #reset-button {
-      padding-top: 10px; /* Add padding to the top */
-      padding-bottom: 10px; /* Add padding to the bottom */
-      /* Other button styles */
-    }
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  div.secondary-container {
-    width: 68%; /* Further reduce width for even smaller screens */
-    h2 {
-      display: block;
-      font-size: 30px;
-      text-align: center;
-      white-space: normal; /* Allow text wrapping on smaller screens */
-      overflow: visible; /* Allow text to overflow container */
-      text-overflow: initial; /* Revert text-overflow to its initial state */
-    }
-    .footer-section p {
-      text-decoration: none;
-      color: whitesmoke;
-      text-shadow: 0 0 20px black;
-      padding: 5px;
-      word-wrap: break-word; /* Allow the text to wrap */
-    }
-    #reset-button {
-      padding-top: 10px; /* Add padding to the top */
-      padding-bottom: 10px; /* Add padding to the bottom */
-      /* Other button styles */
-    }
-  }
-}
