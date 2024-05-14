@@ -7,16 +7,19 @@
    <title>Character Counter</title>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Quicksand:wght@300..700&family=Varela+Round&display=swap" rel="stylesheet">
+
 </head>
 <body>
    <main class="main-container">
       <h1 class="title-text">CHARACTER<br>COUNTER</h1>
       <textarea id="input-field" placeholder="Enter your text..."></textarea>
       <p id="counter">Count: <strong id="character-count">0</strong></p>
-      <button id="reset-button">Reset</button>
-
-      <!-- Footer moved inside the main container -->
+      <div class="parent-container">
+        <button class="button-30" id="reset-button" role="button">Reset</button>
+      </div>
       <footer class="footer-section">
         <p>This project was coded by <a href="https://www.linkedin.com/in/rhiahunte/" target="_blank">Rhia Hamilton</a> and is <a href="https://github.com/RhiaFHunte/RhiaFHunte" target="_blank">on GitHub</a> and <a href="#" target="_blank">hosted on Netlify.</a></p>
       </footer>
