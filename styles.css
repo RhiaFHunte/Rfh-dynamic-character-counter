@@ -39,6 +39,7 @@ h1, h2, p {
   background-color: rgba(255, 255, 255, 0.572);
   width: 100%; 
   min-height: 100px;
+  max-width: 100%;
   margin-bottom: 10px;
   padding: 8px;
   border: none;
