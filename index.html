@@ -2,37 +2,26 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="styles.css">
-   <title>Document</title>
+   <title>Character Counter</title>
    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 <body>
-   <div class="secondary-container">
-   <div class="main-container">
-      <h2 class="title-text">CHARACTER<br>COUNTER</h2>
-      <textarea id="input-field" placeholder="Enter your text..."></textarea> 
-      <p id="counter">Count: <b id="character-count">0</b></p>
+   <main class="main-container">
+      <h1 class="title-text">CHARACTER<br>COUNTER</h1>
+      <textarea id="input-field" placeholder="Enter your text..."></textarea>
+      <p id="counter">Count: <strong id="character-count">0</strong></p>
+      <button id="reset-button">Reset</button>
 
- </div>
-<br>
-<br>
- <div>
-   <button id="reset-button">Reset</button>
- </div>
+      <!-- Footer moved inside the main container -->
+      <footer class="footer-section">
+        <p>This project was coded by <a href="https://www.linkedin.com/in/rhiahunte/" target="_blank">Rhia Hamilton</a> and is <a href="https://github.com/RhiaFHunte/RhiaFHunte" target="_blank">on GitHub</a> and <a href="#" target="_blank">hosted on Netlify.</a></p>
+      </footer>
+   </main>
 
- <footer>
-   <div class="footer-section">
-     <p>
-       This project was coded by
-       <a href="https://www.linkedin.com/in/rhiahunte/" target="_blank">Rhia Hamilton</a>
-       and is <a href="https://github.com/RhiaFHunte/RhiaFHunte" target="_blank">on GitHub</a>
-       and <a href="#" target="_blank">hosted on Netlify.</a>
-     </p>
-   </div>
- </footer>
-<script src="app.js"></script> 
+   <script src="app.js"></script>
 </body>
 </html>
