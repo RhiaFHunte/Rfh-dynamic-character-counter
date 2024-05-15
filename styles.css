@@ -6,7 +6,7 @@ html, body {
   background: linear-gradient(90deg, rgb(252, 115, 156) 0%, rgb(139, 102, 241) 100%);
   background-size: cover; 
   background-repeat: no-repeat; 
-  overflow: hidden; 
+  overflow:scroll; 
   font-family: "Varela Round", sans-serif;
   color: rgb(31, 31, 31);
   display: flex;

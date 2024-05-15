@@ -1,13 +1,13 @@
 const textarea = document.getElementById('input-field');
 const characterCountOutput = document.getElementById('character-count');
 
-// Textarea for input events
+// TEXT AREA SCRIPT
 textarea.addEventListener('input', function() {
-    // Adjust the height of the textarea based on its content
+    // HEIGHT OF TEXT AREAD ADJUSTED BASED ON CONTENT
     this.style.height = 'auto'; 
     this.style.height = this.scrollHeight + 'px';
 
-    // Update the character count displayed
+    // CHARACTER COUNT NUMBER
     characterCountOutput.textContent = this.value.length;
 });
 
@@ -17,6 +17,6 @@ resetButton.addEventListener('click', function() {
     textarea.value = '';
     characterCountOutput.textContent = '0';
 
-    // Reset the height of the textarea
-    textarea.style.height = 'auto'; // Reset the height to initial or minimum height
+    // RESET THE TEXT AREA HEIGHT
+    textarea.style.height = 'auto'; 
 });
